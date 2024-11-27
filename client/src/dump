@@ -1,0 +1,26 @@
+import React from 'react';
+import Sidebar from './sidebar.jsx';
+import Dashboard from './dashboard.jsx';
+import { Routes, Route } from 'react-router-dom';
+import Stream from './admin/stream.jsx'; 
+import Home from './home.jsx'; // Import the Home component
+
+function App() {
+  return (
+    <div className="flex h-screen">
+      <Sidebar />
+      <div className="flex-1 flex flex-col">
+        <Dashboard />
+        <div className="flex-1 overflow-auto">
+          <Routes>
+            <Route path="/" element={<Home />} /> {/* Default route */}
+            <Route path="/admin/stream" element={<Stream />} />
+            {/* Other routes can be added here */}
+          </Routes>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
