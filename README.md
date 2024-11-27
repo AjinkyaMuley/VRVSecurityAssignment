@@ -1,24 +1,26 @@
 # VRVSecurityAssignment
 
-# Starting the Frontend
- --- Move into client directory\n
- --- Run npm i\n
- --- Run npm run dev to start frontend server\n
+## Starting the Frontend  
+- Move into the `client` directory  
+- Run `npm i`  
+- Run `npm run dev` to start the frontend server  
 
-# Starting the Backend
- --- Move into server directory\n
- --- Run npm i\n
- --- Run nodemon index.js to start backend server\n
+## Starting the Backend  
+- Move into the `server` directory  
+- Run `npm i`  
+- Run `nodemon index.js` to start the backend server  
 
-# Credentials to Login
- --- Email                 Password        is_admin\n
-     AD@gmail.com          123456          true\n
-     BT2414@iiitn.ac.in    123             false\n
-     FA123@iiitn.ac.in     789             true\n
-     FA124@iiitn.ac.in     789132          false\n
-     BT2418@iiitn.ac.in    123456          true\n
-     FA120@iiitn.ac.in     147258          false\n
+## Credentials to Login  
+| Email                | Password | is_admin |
+|----------------------|----------|----------|
+| AD@gmail.com          | 123456   | true     |
+| BT2414@iiitn.ac.in    | 123      | false    |
+| FA123@iiitn.ac.in     | 789      | true     |
+| FA124@iiitn.ac.in     | 789132   | false    |
+| BT2418@iiitn.ac.in    | 123456   | true     |
+| FA120@iiitn.ac.in     | 147258   | false    |
 
-Email starting with BT will be initially student and FA will be initially faculty until admin role assigned.\n
+**Note:**  
+Email starting with `BT` will initially be a student, and `FA` will initially be faculty until an admin assigns a role.
 
-New account will be of only created which are added through admission via admin.\n
+New accounts can only be created if added through admission by an admin.
